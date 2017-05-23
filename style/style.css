@@ -8,3 +8,22 @@
      max-width:100%;
      background-color:#ccc;
  }
+
+ #menu ul {
+     width:100%;
+     display: table;
+ }
+
+ #menu li {
+     display: table-cell;
+     text-align: center;
+ }
+ #menu a {
+     display: block;
+ }
+ #menu li:first-child {
+     text-align: left;
+ }
+ #menu li:last-child {
+     text-align: right;
+ }
