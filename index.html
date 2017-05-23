@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XSS</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Welcome</h1>
+            <p>Below you can select one of the three options to try XSS.</p>
+
+            <ul>
+                <li><a href="#">Easy</a></li>
+                <li><a href="#">Medium</a></li>
+                <li><a href="#">Hard</a></li>
+                <li><a href="#">IMPOSSIBRU!</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <a href="#">
+            <div class="col-sm-6">
+                <span class="memeTopText">
+                    <h3>Easy</h3>
+                </span>
+                <img class="memeImage"
+                        src="https://img.memesuper.com/388a2ec667b697e5e01c52c9fe1053f6_its-so-easy-a-drunk-baby-could-do-it-memescom-easy-meme_500-332.png" alt="easy meme" />
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-sm-6">
+                <img class="memeImage" src="https://i0.wp.com/picsmine.com/wp-content/uploads/2017/01/Harley-Quinn-Memes-Normal-Is-Just-A-Setting-On-A-Dryer.jpg?fit=888%2C499" alt="normal meme" />
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="memeImage"
+                 src="http://www.watvierenwevandaag.nl/wp-content/uploads/2015/10/keihard-feesten3.jpg"
+                 alt="Meme Hard" />
+        </div>
+        <div class="col-sm-6">
+            <img class="memeImage"
+                 src="https://pics.me.me/impossibru-16341104.png"
+                 alt="Meme impossible" />
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
