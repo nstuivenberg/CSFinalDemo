@@ -1,6 +1,65 @@
+body {
+    background-color:#feeca3;
+}
+
  .memeImage {
      max-width:100%;
      max-height:100%;
+ }
+
+ .topTitle {
+     text-align:center;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     color:#42332e;
+     /*font-weight:bold;*/
+     font-size:4em;
+ }
+ .subTitle {
+     text-align:center;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+ }
+
+ .difficulty {
+     text-align:center;
+     height:200px;
+     min-heigth:200px;
+     background-color:#ccc;
+     /* CSS3 */
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+ }
+
+ .difficultyLink:hover {
+     text-decoration: none;
+ }
+#linkEasy {
+    background-color:#ACE011;
+    color: #2c9500;
+}
+#linkMedium {
+    background-color:#f97e2c;
+    color:#feeca3;
+
+}
+
+ #linkHard {
+     background-color:#ac0d23;
+     color: #42332e;
+ }
+ #linkImpossible {
+     background-color:#000;
+     color:#fff;
+ }
+ #linkSamy {
+     height:100px;
  }
 
  .memeTopText {

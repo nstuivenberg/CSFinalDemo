@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+quu..__
+ $$$b  `---.__
+  "$$b        `--.                          ___.---uuudP
+   `$$b           `.__.------.__     __.---'      $$$$"              .
+     "$b          -'            `-.-'            $$$"              .'|
+       ".                                       d$"             _.'  |
+         `.   /                              ..."             .'     |
+           `./                           ..::-'            _.'       |
+            /                         .:::-'            .-'         .'
+           :                          ::''\          _.'            |
+          .' .-.             .-.           `.      .'               |
+          : /'$$|           .@"$\           `.   .'              _.-'
+         .'|$u$$|          |$$,$$|           |  <            _.-'
+         | `:$$:'          :$$$$$:           `.  `.       .-'
+         :                  `"--'             |    `-.     \
+        :##.       ==             .###.       `.      `.    `\
+        |##:                      :###:        |        >     >
+        |#'     `..'`..'          `###'        x:      /     /
+         \                                   xXX|     /    ./
+          \                                xXXX'|    /   ./
+          /`-.                                  `.  /   /
+         :    `-  ...........,                   | /  .'
+         |         ``:::::::'       .            |<    `.
+         |             ```          |           x| \ `.:``.
+         |                         .'    /'   xXX|  `:`M`M':.
+         |    |                    ;    /:' xXXX'|  -'MMMMM:'
+         `.  .'                   :    /:'       |-'MMMM.-'
+          |  |                   .'   /'        .'MMM.-'
+          `'`'                   :  ,'          |MMM<
+            |                     `'            |tbap\
+             \                                  :MM.-'
+              \                 |              .''
+               \.               `.            /
+                /     .:::::::.. :           /
+               |     .:::::::::::`.         /
+               |   .:::------------\       /
+              /   .''               >::'  /
+              `',:                 :    .'
+
+
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>XSS</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 <div class="container">
 
+    <!--
     <div class="row">
         <div class="col-sm-12">
             <h1>Welcome</h1>
@@ -25,6 +68,49 @@
             </ul>
         </div>
     </div>
+    -->
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="topTitle">Welcome</h1>
+            <span class="subTitle">Please select your difficulty level.</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="easy.html" class="difficultyLink">
+                <h1 class="difficulty" id="linkEasy">Easy</h1>
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a href="medium.html" class="difficultyLink">
+                <h1 class="difficulty" id="linkMedium">Medium</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="hard.html" class="difficultyLink">
+                <h1 class="difficulty" id="linkHard">Hard</h1>
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a href="impossible.html" class="difficultyLink">
+                <h1 class="difficulty" id="linkImpossible">Impossible</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <a href="samy.html" class="difficultyLink">
+                <h1 class="difficulty" id="linkSamy">Samy's MySpace Worm source code</h1>
+            </a>
+        </div>
+    </div>
+<!--
     <div class="row">
         <a href="easy.html">
             <div class="col-sm-6">
@@ -62,7 +148,7 @@
                  alt="Meme impossible" />
         </div>
     </div>
-
+-->
 </div>
 
 </body>
