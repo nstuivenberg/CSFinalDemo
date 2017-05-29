@@ -29,23 +29,30 @@ function addNewNote() {
 function filterOutBadStuff(userInput) {
 
     var common = getBadHtmlList();
-    var wordArr = userInput,
+    //var wordArr = userInput,
+    console.log("userInput: " + userInput);
 
-    //var wordArr = userInput.match(/\w+/g),
-        commonObj = {},
-        uncommonArr = [],
-        word, i;
+
+    var stringArray = userInput.split(/(\s+)/).filter(function (e) {
+        return e.trim().length > 0;
+    }),
+    commonObj = {},
+    uncommonArr = [],
+    word, i;
+    console.log(stringArray);
 
     for (i = 0; i < common.length; i++) {
         commonObj[ common[i].trim() ] = true;
     }
 
-    for (i = 0; i < wordArr.length; i++) {
-        word = wordArr[i].trim().toLowerCase();
-        if (!commonObj[word]) {
+    for (i = 0; i < stringArray.length; i++) {
+        word = stringArray[i].trim();
+        wordDecapitalized = stringArray[i].trim().toLowerCase();
+        if (!commonObj[wordDecapitalized]) {
             uncommonArr.push(word);
         }
     }
+
 
     if(uncommonArr.length > 0) {
         return arrToString(uncommonArr);
@@ -56,7 +63,8 @@ function filterOutBadStuff(userInput) {
 
 
 function getBadHtmlList() {
-    return ["\"", "\'", "<style", "javascript", ":alert", "onmouseover"];
+    return ["\"", "\'", "<style", "javascript", ":alert", "onmouseover", "<script", "onmouseout", "onerror",
+    "onclick"];
 }
 
 function arrToString(arr) {
