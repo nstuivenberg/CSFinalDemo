@@ -52,38 +52,41 @@
             </ul>
         </div>
     </div>
-    <div class="row">
-            <div class="col-sm-4">
-                <img class="memeImage" src="https://cdn-d4d.kxcdn.com/wp-content/uploads/2015/02/8.jpg" alt="aliens hacking meme" />
-            </div>
-            <div class="col-sm-4">
-                <h1>The easy assignment</h1>
-                Try to use cross site scripting to either deform this page or to let it run some other form of javascript!
-            </div>
-            <div class="col-sm-4">
-                <img class="memeImage"
-                     src="https://img.memesuper.com/ea1b7e698b4a2fbcce793ad419289b0d_what-button-do-i-press-to-hack-memes-hack_533-700.jpeg"
-                     alt="meme kid" />
-            </div>
-    </div>
+
     <div class="row">
         <div class="col-sm-12">
-            <h1>To Do List</h1>
-            <p>Add your todo's below and share them with the WWW!</p>
+            <h1>The easy assignment</h1>
+            <p>Try to use cross site scripting to either deform this page or to let it run some other form of
+                javascript!</p>
+            <p>This form does not have any form of security.</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-2">Title</div>
-        <div class="col-sm-10"><input type="text" id="inputNoteTitle" placeholder="Title...." /> </div>
-    </div>
-    <div class="row">
-        <button onclick="addNewNote()">Add Note</button>
-    </div>
-    <div class="row">
-        <hr />
-    </div>
-    <div class="row">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>To Do List - Add a To Do</h1>
+                <p>Add your todo's below and share them with the WWW!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="inputNoteTitle">Title:</label>
+                    <input type="text" class="form-control" id="inputNoteTitle" placeholder="Title...." />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary" onclick="addNewNote()">Add Note</button>
+            </div>
+        </div>
+        <div class="row">
+            <hr />
+        </div>
+        <div class="row">
         <div class="col-sm-12">
+            <h1>To Do List - Overview</h1>
             <ul id="notesList">
                 <li class="todoListItem">Sjaak voeren</li>
                 <li class="todoListItem">Patat kopen</li>
