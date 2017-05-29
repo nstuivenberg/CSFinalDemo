@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    .          __---__
+  .     .   .-'...:...'-.               .          .
+           / .  . : .__ .\
+    .     /........./  \ .\  .   .                            .
+         / :  :   :| () | :\                  .        .
+        :...........\__/....:         .
+ .      |___________________|              .                     .
+        |...................|               .
+  .     :  :  :   :   :   : :                          .
+      .  \................./      .            .
+          \  .  . : .  .  /   .                                .
+.      .   \._........._./  .        .                   .
+              -..___..-                .         .
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>XSS - Hard Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row" id="menu">
+        <div class="col-sm-12">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="easy.html">Easy</a></li>
+                <li><a href="medium.html">Normal</a></li>
+                <li><a id="visitedPage" href="hard.html">Hard</a></li>
+                <li><a href="impossible.html">Impossible</a></li>
+                <li><a href="samy.html">Samy MySpace Worm</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>The hard assignment</h1>
+            <p>Try to use cross site scripting to either deform this page or to let it run some other form of
+                javascript!</p>
+            <p>This textfield accept certain HTML Elements, just like MySpace did. Can you do somthing naughty?</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Note List - Add Note</h1>
+            <p>Add a note below and share them with the WWW!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="inputNote">Title:</label>
+                <textarea class="form-control" rows="5" id="inputNote"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="button" class="btn btn-primary" onclick="addNewNote()">Add Note</button>
+        </div>
+    </div>
+    <div class="row">
+        <hr />
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>To Do List - Overview</h1>
+            <ul id="notesList">
+                <li class="todoListItem">Sjaak voeren</li>
+                <li class="todoListItem">Patat kopen</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/hard.js"></script>
+
+</body>
+</html>
